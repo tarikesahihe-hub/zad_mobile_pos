@@ -40,4 +40,24 @@ class Customer {
     'loyalty_points': loyaltyPoints,
     'created_at': createdAt.toIso8601String(),
   };
+
+  Customer copyWith({
+    int? id,
+    String? name,
+    String? phone,
+    String? email,
+    String? address,
+    double? balance,
+    int? loyaltyPoints,
+    DateTime? createdAt,
+  }) => Customer(
+    id: id ?? this.id,
+    name: name ?? this.name,
+    phone: phone ?? this.phone,
+    email: email ?? this.email,
+    address: address ?? this.address,
+    balance: balance ?? this.balance,
+    loyaltyPoints: loyaltyPoints ?? this.loyaltyPoints,
+    createdAt: createdAt ?? this.createdAt,
+  );
 }
