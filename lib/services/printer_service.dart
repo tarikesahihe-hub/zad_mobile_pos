@@ -121,7 +121,7 @@ class PrinterService {
     printer.text('طريقة الدفع: ${_getPaymentMethodName(sale.paymentMethod)}', styles: PosStyles(align: PosAlign.center));
 
     if (printQr) {
-      printer.qrcode(sale.invoiceNumber, size: QRSize.Size4);
+      printer.qrcode(sale.invoiceNumber, size: QRSize.size4);
     }
 
     printer.feed(2);
