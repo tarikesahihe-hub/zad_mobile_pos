@@ -12,7 +12,7 @@
 # local_auth
 -keep class androidx.biometric.** { *; }
 
-# Play Core Deferred Components
+# Play Core Deferred Components — not used, suppress warnings
 -dontwarn com.google.android.play.core.splitcompat.SplitCompatApplication
 -dontwarn com.google.android.play.core.splitinstall.SplitInstallException
 -dontwarn com.google.android.play.core.splitinstall.SplitInstallManager
