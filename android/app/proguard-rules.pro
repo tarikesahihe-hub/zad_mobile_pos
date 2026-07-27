@@ -6,6 +6,12 @@
 -keep class io.flutter.** { *; }
 -keep class io.flutter.plugins.** { *; }
 
+# sqflite
+-keep class com.tekartik.sqflite.** { *; }
+
+# local_auth
+-keep class androidx.biometric.** { *; }
+
 # Play Core Deferred Components — not used, suppress warnings
 -dontwarn com.google.android.play.core.splitcompat.SplitCompatApplication
 -dontwarn com.google.android.play.core.splitinstall.SplitInstallException
