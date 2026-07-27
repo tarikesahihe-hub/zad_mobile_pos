@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../providers/pos_provider.dart';
-import '../providers/inventory_provider.dart';
-import '../models/product.dart';
-import '../services/printer_service.dart';
-import 'pos/barcode_scanner_screen.dart';
-import 'pos/sale_receipt_screen.dart';
+import '../../providers/pos_provider.dart';
+import '../../providers/inventory_provider.dart';
+import '../../models/product.dart';
+import '../../services/printer_service.dart';
+import 'barcode_scanner_screen.dart';
+import 'sale_receipt_screen.dart';
 
 class PosScreen extends StatefulWidget {
   const PosScreen({super.key});
