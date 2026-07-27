@@ -19,8 +19,8 @@ dependencies:
   shared_preferences: ^2.2.2
   mobile_scanner: ^3.5.5
   image_picker: ^1.0.7
-  esc_pos_printer: ^4.1.0
-  esc_pos_utils: ^1.1.0
+  esc_pos_printer_plus: any
+  esc_pos_utils_plus: any
   network_info_plus: ^4.1.0
   permission_handler: ^11.0.1
   local_auth: ^2.1.8
