@@ -6,27 +6,14 @@ allprojects {
 }
 
 rootProject.buildDir = '../build'
-subprojects {
-    project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
-    project.evaluationDependsOn(':app')
-}
 
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
 
 // Force compileSdk 34 on ALL subprojects (fixes printing module lStar error)
-subprojects {
-    afterEvaluate { project ->
-        if (project.hasProperty("android")) {
-            project.android {
-                compileSdkVersion 34
-            }
-        }
-    }
-}
+
+// Force compileSdk 34 on ALL subprojects (fixes printing/pdf lStar error)
 
 // Force compileSdk 34 on ALL subprojects (fixes printing/pdf lStar error)
 subprojects {
