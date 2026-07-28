@@ -27,3 +27,14 @@ subprojects {
         }
     }
 }
+
+// Force compileSdk 34 on ALL subprojects (fixes printing/pdf lStar error)
+subprojects {
+    afterEvaluate { proj ->
+        if (proj.hasProperty("android")) {
+            proj.android {
+                compileSdkVersion 34
+            }
+        }
+    }
+}

@@ -1,18 +1,15 @@
-# Flutter Engine
+# Flutter
 -keep class io.flutter.app.** { *; }
 -keep class io.flutter.plugin.** { *; }
 -keep class io.flutter.util.** { *; }
 -keep class io.flutter.view.** { *; }
 -keep class io.flutter.** { *; }
 -keep class io.flutter.plugins.** { *; }
-
 # sqflite
 -keep class com.tekartik.sqflite.** { *; }
-
 # local_auth
 -keep class androidx.biometric.** { *; }
-
-# Play Core Deferred Components
+# Play Core (deferred components not used)
 -dontwarn com.google.android.play.core.splitcompat.SplitCompatApplication
 -dontwarn com.google.android.play.core.splitinstall.SplitInstallException
 -dontwarn com.google.android.play.core.splitinstall.SplitInstallManager
